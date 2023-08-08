@@ -2,9 +2,10 @@ const express = require("express")
 const app = express()
 const PORT = 3000
 
+//  requiring fruits from models folder
+// front end imports back end requires
+const fruits = require("./models/fruits")
 
-
-const fruits = ["apple", "banana", "pear"]
 
 app.get('/fruits', ( req, res ) => {
     res.send(fruits)
